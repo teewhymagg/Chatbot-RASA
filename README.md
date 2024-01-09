@@ -8,11 +8,37 @@ RASA bot - Bavarian Guide
 
 # Project description
 
-This myGit project is assistance system, specifically rasa bot with the theme of Bavarian Guide. Rasa is an open source machine learning framework that was used to create a Bot that is a Travel Guide in Bavaria. Right fit, Persona, Use cases, Technical prerequisites, Example dialogs, Dialog flow are show in wiki. See [wiki](https://mygit.th-deg.de/ty17836/chatbot-as/-/wikis/home). 
+This myGit project is assistance system, specifically rasa bot with the theme of Bavarian Guide. Rasa is an open source machine learning framework that was used to create a Bot that is a Travel Guide in Bavaria. Right fit, Persona, Use cases, Technical prerequisites, Example dialogs, Dialog flow are show in wiki. See [wiki](https://mygit.th-deg.de/ty17836/chatbot-as/-/wikis/home). We implemented 5 use cases based on different personas. Bot is able to understand the inputs of the user and print the outputs based on the stories that are written in stories.yml. All of the intents and examples of possible inputs of the user are written inside the file nlu.yml. All of the intents, actions, entities, responses and slots are written in domain.yml. The actions.py consists all of the functions that are triggered throughout the conversation. They are important for the correct work of the bot. Api for weather, info about the city was implemented. The city that was entered by the user will output the weather in this city and also the information about it from wikipedia. Bot also offers to book the accommodation by outputing the website url with the city that user entered. It also offers the Deutsche Bahn website url, specifically BayernTicket webpage.  
 
 # Installation
 
-To install this project the repository needs to be cloned. To install rasa run the following command: 
+To install this project the repository needs to be cloned. 
+
+You can create virtual environment:
+
+```bash
+python -m venv venv_name
+```
+
+Activate the virtual environment: Windows
+
+```bash
+venv_name\Scripts\activate
+```
+
+MacOs/Linux:
+
+```bash
+source venv_name/bin/activate
+```
+
+To deactivate it, run:
+
+```bash
+deactivate
+```
+
+To install rasa run the following command: 
 ```bash
 pip3 install rasa
 ```
