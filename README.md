@@ -1,93 +1,90 @@
-# Chatbot RASA
+# RASA bot
 
+Yeslamov Temirlan, 22200836
 
+Aldanbergen Zholdas, 22211514
 
-## Getting started
+RASA bot - Bavarian Guide
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+# Project description
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+This myGit project is assistance system, specifically rasa bot with the theme of Bavarian Guide. Rasa is an open source machine learning framework that was used to create a Bot that is a Travel Guide in Bavaria. Right fit, Persona, Use cases, Technical prerequisites, Example dialogs, Dialog flow are show in wiki. See [wiki](https://mygit.th-deg.de/ty17836/chatbot-as/-/wikis/home). 
 
-## Add your files
+# Installation
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
+To install this project the repository needs to be cloned. To install rasa run the following command: 
+```bash
+pip3 install rasa
 ```
-cd existing_repo
-git remote add origin https://mygit.th-deg.de/ty17836/chatbot-rasa.git
-git branch -M main
-git push -uf origin main
+or 
+```bash
+pip install rasa
+```
+To be able to execute the program rasa should be trained, run the following command:
+```bash
+rasa train
+```
+Also the following command should be entered
+```bash
+rasa run action -p 5056
 ```
 
-## Integrate with your tools
+After the rasa is trained, it has to be exectuted, following command:
+```bash
+rasa shell
+```
 
-- [ ] [Set up project integrations](https://mygit.th-deg.de/ty17836/chatbot-rasa/-/settings/integrations)
+# Basic usage
 
-## Collaborate with your team
+After executing the program the console bot will be opened. 
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+This is the example of a typical conversation:
 
-## Test and Deploy
+**Your input** ->  Hello                                                 
 
-Use the built-in continuous integration in GitLab.
+Hey! How are you?
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+**Your input** -> Good
 
-***
+Great! Carry on!
 
-# Editing this README
+**Your input** -> what can i do in Bavaria?                                       
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+I can suggest you several things like nature in Bavaria or description of major cities in Bavaria and also i can tell you the weather in a specific state in Bavaria
 
-## Suggestions for a good README
+**Your input** -> lets see cities                                               
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Interested in cities? Choose a city in Bavaria.
 
-## Name
-Choose a self-explaining name for your project.
+**Your input** -> Deggendorf                                       
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Deggendorf (Bavarian: Degndorf, Deggndorf) is a town in Bavaria, Germany, capital of the Deggendorf district.
+It is located on the left bank approximately in the middle between the Danube cities of Regensburg and Passau. The Danube forms the town's natural border towards the south. Towards the west, north and east the town is surrounded by the foothills of the central Bavarian Forest.
+Near the southwestern rim of the town, the railway bridge crosses the Danube at river-kilometer 2286 ||| The current weather in Deggendorf is scattered clouds with a temperature of -4.22°C.
+ You can book an accommodation here: https://www.booking.com/city/de/Deggendorf.html?aid=1610684
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+**Your input** -> lets see nature                                               
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+You've chosen to explore nature. Would you like mountains, forests, or lakes?  
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+**Your input** -> lakes              
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Bavaria's lakes are stunning. Would you like to hear about Chiemsee, Starnberger See, or Ammersee?
+**Your input**  chiemsee                                                        
+Chiemsee (German pronunciation: [ˈkiːmzeː] ) is a freshwater lake in Bavaria, Germany, near Rosenheim. It is often called "the Bavarian Sea". The rivers Tiroler Achen and Prien flow into the lake from the south, and the river Alz flows out towards the north | You can buy Bavarian Ticket here: https://www.bahn.de/angebot/regio/laender-tickets/bayern-ticket
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Want to get info about something else? Just type 'nature' or 'cities'.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+# Work done
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Zholdas performed tasks:
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+1) Persona (no. 2 in previous list)
+2) Example dialogs (3)
+3) Implementation yml-files (domain, data/nlu)
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Temirlan perfomed tasks:
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+4) Use cases (1)
+5) Dialog flow (4)
+6) Implementation yml-files (data/stories data/rules)

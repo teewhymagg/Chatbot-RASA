@@ -1,0 +1,110 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: greet and ask general
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_bavaria
+  - action: utter_general_posibilities
+  - checkpoint: ask_category_checkpoint
+
+
+- story: choose city category
+  steps:
+  - checkpoint: ask_category_checkpoint
+  - intent: choose_category
+    entities: 
+    - category: city
+  - slot_was_set: 
+    - category: city  
+  - action: action_process_category_choice
+  - checkpoint: city_category_chosen_checkpoint
+
+- story: ask about city
+  steps:
+  - checkpoint: city_category_chosen_checkpoint
+  - intent: ask_city
+    entities: 
+    - city: Munich
+  - slot_was_set: 
+    - city: Munich 
+  - action: action_choose_city
+  - checkpoint: specific_city_asked_checkpoint
+
+- story: choose specific city and deny
+  steps:
+  - checkpoint: specific_city_asked_checkpoint
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: choose nature category
+  steps:
+  - checkpoint: ask_category_checkpoint
+  - intent: choose_category
+    entities: 
+    - category: nature
+  - slot_was_set: 
+    - category: nature  
+  - action: action_process_category_choice
+  - action: action_reset_slots
+  - checkpoint: nature_category_chosen_checkpoint
+
+
+- story: ask about nature
+  steps:
+  - checkpoint: nature_category_chosen_checkpoint
+  - intent: ask_nature
+    entities: 
+    - nature_slot: mountains
+  - slot_was_set: 
+    - nature_slot: mountains 
+  - action: action_choose_nature
+  - checkpoint: specific_nature_asked_checkpoint
+
+- story: choose specific nature item
+  steps:
+  - checkpoint: specific_nature_asked_checkpoint
+  - intent: choose_specific_nature
+    entities:
+    - specific_nature: zugspitze
+  - slot_was_set:
+    - specific_nature: zugspitze
+  - action: action_choose_specific_nature
+  - checkpoint: specific_nature_chosen_checkpoint
+
+- story: deny after specific nature choice
+  steps:
+  - checkpoint: specific_nature_chosen_checkpoint
+  - intent: deny
+  - action: utter_goodbye

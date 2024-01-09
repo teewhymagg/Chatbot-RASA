@@ -1,0 +1,5 @@
+rasabot/
+models/*
+.rasa/cache/
+.rasa/*
+story_graph.dot

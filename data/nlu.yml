@@ -1,0 +1,219 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_bavaria
+  examples: |
+    - Can you recommend some activities in Bavaria?
+    - What are the top things to do in Bavaria?
+    - Suggest me some places to visit in Bavaria.
+    - What's interesting to see in Bavaria?
+    - I'm looking for things to do in Bavaria, any ideas?
+    - What are some must-see attractions in Bavaria?
+    - Tell me about some unique experiences in Bavaria.
+    - What are the best things to experience in Bavaria?
+
+
+- intent: ask_city
+  examples: |
+    - I'm planning a trip to [Nuremberg](city).
+    - Can you give me information about [Augsburg](city)?
+    - I'd like to know more about [Regensburg](city).
+    - What are the attractions in [Ingolstadt](city)?
+    - Tell me about [Würzburg](city).
+    - I'm interested in visiting [Fürth](city).
+    - What can I do in [Erlangen](city)?
+    - Is [Bayreuth](city) worth visiting?
+    - I want to explore [Bamberg](city).
+    - How about a day in [Aschaffenburg](city)?
+    - Show me places to see in [Landshut](city).
+    - I'm thinking of going to [Kempten](city).
+    - What's special about [Rosenheim](city)?
+    - Guide me through [Neu-Ulm](city).
+    - I need travel tips for [Schweinfurt](city).
+    - Can you suggest activities in [Passau](city)?
+    - I'm curious about the history of [Straubing](city).
+    - What to see in [Dachau](city)?
+    - Any recommendations for [Freising](city)?
+    - Planning to visit [Hof](city), what should I know?
+    - What's the best time to visit [Coburg](city)?
+    - I'm looking for events in [Ansbach](city).
+    - Tell me about the culture in [Amberg](city).
+    - I'd like to visit [Weiden](city).
+    - Are there museums in [Kaufbeuren](city)?
+    - What are the landmarks in [Memmingen](city)?
+    - I want to visit [Munich](city).
+    - [Munich](city).
+    - [Deggendorf](city).
+
+
+
+- intent: choose_category
+  examples: | 
+    - I'm interested in the [nature](category) of Bavaria.
+    - Can you show me different [cities](category) in Bavaria?
+    - I would like to explore the [nature](category) in Bavaria.
+    - Could you provide information on various [cities](category)?
+    - Tell me about the [nature](category) spots in Bavaria.
+    - Please give me a tour of Bavarian [cities](category).
+    - Show me some beautiful [nature](category) locations.
+    - Let's discuss the major [cities](category) in Bavaria.
+    - I'm curious about Bavaria's [nature](category) reserves.
+    - Guide me through the [cities](category) of Bavaria.
+
+- intent: ask_nature
+  examples: |
+    - lets see [mountains](nature_slot)
+    - [mountains](nature_slot)
+    - lets see [forests](nature_slot)
+    - [forests](nature_slot)
+    - lets see [lakes](nature_slot)
+    - [lakes](nature_slot)
+    - I want to explore the [mountains](nature_slot) in Bavaria.
+    - Can you show me the best [forests](nature_slot) for hiking?
+    - I'm interested in visiting some [lakes](nature_slot).
+    - What are the most famous [mountains](nature_slot) in the region?
+    - Are there any hidden [forests](nature_slot) you recommend?
+    - I'd love to go boating on Bavarian [lakes](nature_slot).
+    - Show me pictures of the [mountains](nature_slot).
+    - Which [forests](nature_slot) are near Munich?
+    - Guide me to the most scenic [lakes](nature_slot).
+    - What activities can I do in the [mountains](nature_slot)?
+    - Are the [forests](nature_slot) in Bavaria suitable for camping?
+    - Can I fish in any of the [lakes](nature_slot)?
+    - I'm looking for the best viewpoints in the [mountains](nature_slot).
+    - Tell me about the biodiversity in the [forests](nature_slot).
+    - I'm interested in the history of Bavarian [lakes](nature_slot).
+
+
+- intent: choose_specific_nature
+  examples: |
+    - I would like to go to [zugspitze](specific_nature).
+    - Let's visit [watzmann](specific_nature).
+    - I'm interested in [tegelberg](specific_nature).
+    - How about [spessart](specific_nature)?
+    - I want to see [steigerwald](specific_nature).
+    - Take me to [bayerischer Wald](specific_nature).
+    - I'm thinking of visiting [chiemsee](specific_nature).
+    - What about [starnberger See](specific_nature)?
+    - Let's check out [ammersee](specific_nature).
+    - I'd like to explore the [zugspitze](specific_nature) mountain.
+    - Can you provide information about [watzmann](specific_nature)?
+    - I'm planning a trip to [tegelberg](specific_nature) soon.
+    - What can you tell me about [spessart](specific_nature) forest?
+    - Is [steigerwald](specific_nature) worth visiting?
+    - I heard [bayerischer Wald](specific_nature) is beautiful, what do you think?
+    - Could you suggest activities at [chiemsee](specific_nature)?
+    - Is [starnberger See](specific_nature) good for swimming?
+    - I'm curious about [ammersee](specific_nature) and its surroundings.
+    - Can we go hiking in the [zugspitze](specific_nature) area?
+    - What are the best trails in [watzmann](specific_nature)?
+    - Tell me more about the history of [tegelberg](specific_nature).
+    - Are there guided tours available in [spessart](specific_nature)?
+    - What kind of wildlife is in [steigerwald](specific_nature)?
+    - I'm interested in camping in [bayerischer Wald](specific_nature).
+    - Recommend a good time to visit [chiemsee](specific_nature).
+    - What's the best way to get to [starnberger See](specific_nature)?
+    - Are there boat rentals at [ammersee](specific_nature)?
+    - I want to learn about the geography of [zugspitze](specific_nature).
+    - Are there cultural landmarks near [watzmann](specific_nature)?
+    - Show me scenic spots in [zugspitze](specific_nature).
+    - What's the climate like at [watzmann](specific_nature)?
+    - Can I do birdwatching in [tegelberg](specific_nature)?
+    - What are the popular hiking routes in [spessart](specific_nature)?
+    - Are there any unique plants in [steigerwald](specific_nature)?
+    - I want to know about the wildlife in [bayerischer Wald](specific_nature).
+    - What are the historical sites near [chiemsee](specific_nature)?
+    - Can I kayak on [starnberger See](specific_nature)?
+    - What are the camping facilities like at [ammersee](specific_nature)?
+
+
+

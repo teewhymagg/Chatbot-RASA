@@ -1,0 +1,84 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_city
+  - ask_bavaria
+  - ask_nature
+  - choose_specific_nature
+  - choose_category 
+
+actions: 
+  - action_choose_city
+  - action_choose_nature
+  - action_choose_specific_nature
+  - action_process_category_choice
+  - action_reset_slots
+
+entities: 
+  - city
+  - nature_slot
+  - specific_nature
+  - category
+
+slots:
+  category:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: category
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: city
+  nature_slot: 
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nature_slot
+  specific_nature:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: specific_nature
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_general_posibilities:
+  - text: "I can suggest you several things like nature in Bavaria or description of major cities in Bavaria and also i can tell you the weather in a specific state in Bavaria"
+
+  utter_choose_city:
+  - text: "I have several suggestions for you. I can tell more about Munich, Berlin, Bremen and Frankfurt"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
