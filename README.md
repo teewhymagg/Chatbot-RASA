@@ -70,7 +70,9 @@ You've chosen to explore nature. Would you like mountains, forests, or lakes?
 **Your input** -> lakes              
 
 Bavaria's lakes are stunning. Would you like to hear about Chiemsee, Starnberger See, or Ammersee?
-**Your input**  chiemsee                                                        
+
+**Your input** -> chiemsee        
+                                                
 Chiemsee (German pronunciation: [ˈkiːmzeː] ) is a freshwater lake in Bavaria, Germany, near Rosenheim. It is often called "the Bavarian Sea". The rivers Tiroler Achen and Prien flow into the lake from the south, and the river Alz flows out towards the north | You can buy Bavarian Ticket here: https://www.bahn.de/angebot/regio/laender-tickets/bayern-ticket
 
 Want to get info about something else? Just type 'nature' or 'cities'.
