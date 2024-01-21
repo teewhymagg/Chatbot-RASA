@@ -118,7 +118,13 @@ Want to get info about something else? Just type 'nature' or 'cities'.
 
 # Implementation of the Requests
 
-In this project we have 5 
+In this project we have 5 requests with slots and entities to process user messages. 
+
+- resetting slots - **ActionResetSlots**, resets nature_slot
+- choosing city - **ActionChooseCity**, requests information from wikipedia and weather websites using API key and presents information about the city the user specified
+- choosing specific nature - **ActionChooseSpecificNature**, requests information from wikipedia, presents information, sends the link to buy Bayern ticket
+-processing category choice - **ActionProcessCategoryChoice**, processes category choice (nature or city). Based on user response, provide bot response for nature or city. 
+- choosing nature - **ActionChooseNature**, processes the actions need to be taken based on nature_slot, to output specific information based on "forests", "mountains", "lakes"
 
 # Work done
 
@@ -133,3 +139,5 @@ Temirlan perfomed tasks:
 4) Use cases (1)
 5) Dialog flow (4)
 6) Implementation yml-files (data/stories data/rules)
+
+However, we completed every task together, so there were practically no devisions to the roles in completing tasks.
