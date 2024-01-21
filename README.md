@@ -1,18 +1,27 @@
-# RASA bot
-
 Yeslamov Temirlan, 22200836
 
 Aldanbergen Zholdas, 22211514
 
-RASA bot - Bavarian Guide
+# RASA bot - Bavarian Guide
 
-This the link to the previous repository where history of the project can be seen. he different repository had to be created, since last repository's size was too large
+Link to MyGit repository:
+https://mygit.th-deg.de/ty17836/chatbot-rasa
 
+Link to **previous** MyGit repository with history of development:
 https://mygit.th-deg.de/ty17836/chatbot-as
+
+Link to Wikis: 
+https://mygit.th-deg.de/ty17836/chatbot-rasa/-/wikis/home
 
 # Project description
 
-This myGit project is assistance system, specifically rasa bot with the theme of Bavarian Guide. Rasa is an open source machine learning framework that was used to create a Bot that is a Travel Guide in Bavaria. Right fit, Persona, Use cases, Technical prerequisites, Example dialogs, Dialog flow are show in wiki. See [wiki](https://mygit.th-deg.de/ty17836/chatbot-as/-/wikis/home). We implemented 5 use cases based on different personas. Bot is able to understand the inputs of the user and print the outputs based on the stories that are written in stories.yml. All of the intents and examples of possible inputs of the user are written inside the file nlu.yml. All of the intents, actions, entities, responses and slots are written in domain.yml. The actions.py consists all of the functions that are triggered throughout the conversation. They are important for the correct work of the bot. Api for weather, info about the city was implemented. The city that was entered by the user will output the weather in this city and also the information about it from wikipedia. Bot also offers to book the accommodation by outputing the website url with the city that user entered. It also offers the Deutsche Bahn website url, specifically BayernTicket webpage.  
+This myGit project is assistance system, specifically rasa bot with the theme of Bavarian Guide. Rasa is an open source machine learning framework that was used to create a Bot that is a Travel Guide in Bavaria. Right fit, Persona, Use cases, Technical prerequisites, Example dialogs, Dialog flow are shown in wiki. We implemented 5 use cases based on different personas. Bot is able to understand the inputs of the user and print the outputs based on the stories that are written in stories.yml. All of the intents and examples of possible inputs of the user are written inside the file nlu.yml. All of the intents, actions, entities, responses and slots are written in domain.yml. The actions.py consists all of the functions that are triggered throughout the conversation. They are important for the correct work of the bot. Api for weather, info about the city was implemented. The city that was entered by the user will output the weather in this city and also the information about it from wikipedia. Bot also offers to book the accommodation by outputing the website url with the city that user entered. It also offers the Deutsche Bahn website url, specifically BayernTicket webpage.  
+
+# Prerequisites
+
+rasa = 3.6.15
+
+python = 3.10.10
 
 # Installation
 
@@ -106,6 +115,10 @@ Bavaria's lakes are stunning. Would you like to hear about Chiemsee, Starnberger
 Chiemsee (German pronunciation: [ˈkiːmzeː] ) is a freshwater lake in Bavaria, Germany, near Rosenheim. It is often called "the Bavarian Sea". The rivers Tiroler Achen and Prien flow into the lake from the south, and the river Alz flows out towards the north | You can buy Bavarian Ticket here: https://www.bahn.de/angebot/regio/laender-tickets/bayern-ticket
 
 Want to get info about something else? Just type 'nature' or 'cities'.
+
+# Implementation of the Requests
+
+In this project we have 5 
 
 # Work done
 
