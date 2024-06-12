@@ -1,3 +1,6 @@
+Collaborator:
+kazanova777 https://github.com/kazanova777
+
 # RASA bot - Bavarian Guide
 
 Link to Wikis: 
