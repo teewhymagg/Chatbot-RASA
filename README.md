@@ -1,7 +1,3 @@
-Yeslamov Temirlan, 22200836
-
-Aldanbergen Zholdas, 22211514
-
 # RASA bot - Bavarian Guide
 
 Link to Wikis: 
