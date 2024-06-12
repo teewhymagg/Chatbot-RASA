@@ -4,14 +4,8 @@ Aldanbergen Zholdas, 22211514
 
 # RASA bot - Bavarian Guide
 
-Link to MyGit repository:
-https://mygit.th-deg.de/ty17836/chatbot-rasa
-
-Link to **previous** MyGit repository with history of development:
-https://mygit.th-deg.de/ty17836/chatbot-as
-
 Link to Wikis: 
-https://mygit.th-deg.de/ty17836/chatbot-rasa/-/wikis/home
+https://github.com/teewhymagg/Chatbot-RASA/wiki
 
 # Project description
 
